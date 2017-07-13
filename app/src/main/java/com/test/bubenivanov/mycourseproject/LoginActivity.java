@@ -1,6 +1,5 @@
 package com.test.bubenivanov.mycourseproject;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,11 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-
-import static com.test.bubenivanov.mycourseproject.ApplicationOne.APP_PREFERENCES;
-import static com.test.bubenivanov.mycourseproject.ApplicationOne.APP_PREF_NAME;
-import static com.test.bubenivanov.mycourseproject.ApplicationOne.APP_PREF_PASS;
 public class LoginActivity extends AppCompatActivity {
 Button singIn,singUp;
     EditText name,password;
@@ -24,7 +18,7 @@ Button singIn,singUp;
 
 name=(EditText) findViewById(R.id.user_name);
         password=(EditText) findViewById(R.id.pass);
-singIn.setOnClickListener(new View.OnClickListener() {
+/*singIn.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         account =getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
@@ -40,7 +34,7 @@ singIn.setOnClickListener(new View.OnClickListener() {
 
 
     }
-});
+});*/
 
 singUp.setOnClickListener(new View.OnClickListener() {
     @Override
